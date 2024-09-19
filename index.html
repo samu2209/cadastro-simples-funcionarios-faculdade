@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+    <form id="meu-formulario">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome</label>
+            <input type="text" required id="nome">
+            <label for="idade">Idade</label>
+            <input type="number" min="16" max="70" name="" required id="idade">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Informações Profissionais</legend>
+            <label for="departamento">Departamento</label>
+            <select name="departamento"  id="departamento">
+                <option value="administrativo" selected >Administrativo</option>
+                <option value="TI" >TI</option>
+                <option value="financeiro">Financeiro</option>
+                <option value="marketing">Marketing</option>
+                <option value="operacional">Operacional</option>
+            </select>
+            <label for="cargo">Cargo</label>
+            <select name="cargo" id="cargo">
+                <option value="gerente">Gerente</option>
+                <option value="desenvolvedor">Desenvolvedor</option>
+                <option value="outros cargos">Outros Cargos</option>
+            </select>
+            <label for="linguagem">Linguagem de Programação</label>
+            <select name="linguagem-programacao" id="linguagem-programacao">
+                <option value="javascript">Javascript</option>
+                <option value="pyton">Pyton</option>
+                <option value="java">Java</option>
+                <option value="ruby">Ruby</option>
+            </select>
+        </fieldset>
+        <button id="btn-enviar" value="Cadastrar">Cadastrar</button>
+    </form>
+    
+    <section class="resposta">
+
+        <div class="funcionarios-cadastrados">
+            <h2>Funcionário Cadastrado</h2>
+        </div>
+        <div id="display" style="display: none;">
+            <div>Nome : <span id="display-nome"></span></div>
+            <div>Idade : <span id="display-idade"></span></div>
+            <div>Cargo : <span id="display-cargo"></span></div>
+            <div>Departamento : <span id="display-departamento"></span></div>
+            <div>Linguagem de Programação : <span id="display-linguagem-programacao"></span></div>
+            <h4>Apresentação</h4>
+            <div id="display-apresentar">
+
+            </div>
+            <h4>Descrição do Cargo</h4>
+            <div id="display-descricao"></div>
+
+        </div>
+        
+        
+    </section>
+    
+
+    <script src="/assets/atividade.js"></script>
+</body>
+</html>
